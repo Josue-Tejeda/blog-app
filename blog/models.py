@@ -8,7 +8,6 @@ class Post(models.Model):
     title = models.CharField(max_length=250)
     
     status = models.SmallIntegerField(
-        max_length=2,
         choices=data.BLOG_STATUS,
         default=data.DRAFT
     )
