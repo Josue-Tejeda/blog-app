@@ -3,6 +3,7 @@ from django.db import models
 from django.utils import timezone
 
 from blog import data
+from blog.managers import PostQuerySet
 
 class Post(models.Model):
     title = models.CharField(max_length=250)
@@ -27,6 +28,8 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=timezone.now)
     
     updated_at = models.DateTimeField(auto_now=timezone.now)
+    
+    objects = PostQuerySet.as_manager()
     
     class Meta:
         ordering = ['-publish_at']
