@@ -1,0 +1,17 @@
+<div class="flex justify-center mt-8">
+    <div class="flex items-center space-x-4">
+        {% if page.has_previous %}
+        <a href="?page={{ page.previous_page_number }}" class="px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300 transition duration-300">
+            Previous
+        </a>
+        {% endif %}
+        <span class="text-gray-700">
+            Page {{ page.number }} of {{ page.paginator.num_pages }}.
+        </span>
+        {% if page.has_next %}
+        <a href="?page={{ page.next_page_number }}" class="px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300 transition duration-300">
+            Next
+        </a>
+        {% endif %}
+    </div>
+</div>

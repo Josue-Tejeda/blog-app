@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
 
 from blog import data
@@ -13,7 +14,10 @@ class Post(models.Model):
         default=data.DRAFT
     )
     
-    slug = models.SlugField(max_length=250)
+    slug = models.SlugField(
+        max_length=250,
+        unique_for_date='publish_at'
+        )
     
     body = models.TextField()
     
@@ -39,3 +43,15 @@ class Post(models.Model):
     
     def __str__(self):
         return self.title
+    
+    def get_absolute_url(self):
+        return reverse(
+            'blog:post_detail',
+            args=[
+                self.publish_at.year,
+                self.publish_at.month,
+                self.publish_at.day,
+                self.slug
+                ]
+            )
+    
