@@ -57,6 +57,10 @@ class Post(models.Model):
                 self.slug
                 ]
             )
+        
+    def get_similar_posts(self):
+        posts_tags_ids = self.tags.values_list('id', flat=True)
+        return Post.objects.get_published().filter(tags__in=posts_tags_ids).exclude(id=self.id)
     
 
 class Comment(models.Model):

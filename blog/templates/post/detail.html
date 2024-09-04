@@ -9,51 +9,81 @@
         Published on <span class="font-medium">{{ post.publish }}</span> by 
         <span class="font-medium text-blue-600 hover:text-blue-800">{{ post.author }}</span>
     </p>
+    
+    <!-- Post Content -->
     <article class="prose lg:prose-xl max-w-none">
         {{ post.body|linebreaks }}
     </article>
+    
+    <!-- Share Button -->
     <div class="mt-8">
         <a href="{% url 'blog:post_share' post.id %}" 
-        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+           class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
             Share this post
         </a>
     </div>
 
-    {% with comments.count as total_comments %}
-    <div class="mt-10">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-6">
-            {{ total_comments }} comment{{ total_comments|pluralize }}
-        </h2>
-
-        <div class="space-y-6">
-            {% for comment in comments %}
-            <div class="p-4 bg-white rounded-lg shadow-md">
-                <p class="text-sm text-gray-600">
-                    <span class="font-medium">{{ comment.name }}</span> 
-                    commented on <span class="font-medium">{{ comment.created_at }}</span>
-                </p>
-                <p class="mt-2 text-gray-700">
-                    {{ comment.body|linebreaks }}
+    <!-- Similar Posts Section -->
+    <div class="mt-8 bg-blue-50 p-6 rounded-lg">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Similar Posts</h2>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {% for post in similar_posts %}
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                <h3 class="text-lg font-bold text-gray-800">
+                    <a href="{{ post.get_absolute_url }}" class="hover:text-blue-600">
+                        {{ post.title }}
+                    </a>
+                </h3>
+                <p class="text-sm text-gray-500 mt-2">
+                    Published on <span class="font-medium">{{ post.publish }}</span> by 
+                    <span class="font-medium text-blue-600 hover:text-blue-800">{{ post.author }}</span>
                 </p>
             </div>
             {% empty %}
-            <p class="text-gray-500">No comments yet. Be the first to comment!</p>
+            <p class="text-gray-500">There are no similar posts yet.</p>
             {% endfor %}
         </div>
     </div>
-    {% endwith %}
 
-    <div x-data="{ showForm: false }" class="mt-6">
-        <div x-show="showForm" class="mt-4">
-            {% include "post/includes/comment_form.html" %}
+
+    <!-- Comments Section -->
+    <div class="mt-8 bg-pink-50 p-6 rounded-lg">
+        {% with comments.count as total_comments %}
+        <div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">
+                {{ total_comments }} comment{{ total_comments|pluralize }}
+            </h2>
+            <div class="space-y-6">
+                {% for comment in comments %}
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <p class="text-sm text-gray-600">
+                        <span class="font-medium">{{ comment.name }}</span> 
+                        commented on <span class="font-medium">{{ comment.created_at }}</span>
+                    </p>
+                    <p class="mt-2 text-gray-700">
+                        {{ comment.body|linebreaks }}
+                    </p>
+                </div>
+                {% empty %}
+                <p class="text-gray-500">No comments yet. Be the first to comment!</p>
+                {% endfor %}
+            </div>
         </div>
-    
-        <button 
-            @click="showForm = !showForm" 
-            :class="showForm ? 'bg-red-600 hover:bg-red-700 focus:ring-red-500' : 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500'" 
-            class="mt-4 px-4 py-2 text-white font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2">
-            <span x-text="showForm ? 'Cancel' : 'Add Comment'"></span>
-        </button>
-    </div>    
+        {% endwith %}
+
+        <!-- Comment Form Toggle -->
+        <div x-data="{ showForm: false }" class="mt-6">
+            <div x-show="showForm" class="mt-4">
+                {% include "post/includes/comment_form.html" %}
+            </div>
+        
+            <button 
+                @click="showForm = !showForm" 
+                :class="showForm ? 'bg-red-600 hover:bg-red-700 focus:ring-red-500' : 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500'" 
+                class="mt-4 px-4 py-2 text-white font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2">
+                <span x-text="showForm ? 'Cancel' : 'Add Comment'"></span>
+            </button>
+        </div>
+    </div>
 </div>
 {% endblock %}
