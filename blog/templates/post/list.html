@@ -14,6 +14,14 @@
                     {{ post.title }}
                 </a>
             </h2>
+            <p class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="text-sm text-gray-600">Tags:</span>
+                {% for tag in post.tags.all %}
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
+                    {{ tag }}
+                </span>
+                {% endfor %}
+            </p>
             <p class="text-sm text-gray-600 mb-4">
                 Published <time class="font-medium">{{ post.publish }}</time> by <span class="font-medium">{{ post.author }}</span>
             </p>

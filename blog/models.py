@@ -2,6 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
+from taggit.managers import TaggableManager
 
 from blog import data
 from blog.managers import PostQuerySet, CommentQuerySet
@@ -34,6 +35,8 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=timezone.now)
     
     objects = PostQuerySet.as_manager()
+    
+    tags = TaggableManager()
     
     class Meta:
         ordering = ['-publish_at']

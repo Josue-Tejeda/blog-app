@@ -43,14 +43,11 @@
     </div>
     {% endwith %}
 
-    <!-- Add Comment Button and Form -->
     <div x-data="{ showForm: false }" class="mt-6">
-        <!-- Add Comment Form -->
         <div x-show="showForm" class="mt-4">
             {% include "post/includes/comment_form.html" %}
         </div>
     
-        <!-- Toggle Button -->
         <button 
             @click="showForm = !showForm" 
             :class="showForm ? 'bg-red-600 hover:bg-red-700 focus:ring-red-500' : 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500'" 
