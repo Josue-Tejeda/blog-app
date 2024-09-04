@@ -12,5 +12,51 @@
     <article class="prose lg:prose-xl max-w-none">
         {{ post.body|linebreaks }}
     </article>
+    <div class="mt-8">
+        <a href="{% url 'blog:post_share' post.id %}" 
+        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Share this post
+        </a>
+    </div>
+
+    {% with comments.count as total_comments %}
+    <div class="mt-10">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">
+            {{ total_comments }} comment{{ total_comments|pluralize }}
+        </h2>
+
+        <div class="space-y-6">
+            {% for comment in comments %}
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <p class="text-sm text-gray-600">
+                    <span class="font-medium">{{ comment.name }}</span> 
+                    commented on <span class="font-medium">{{ comment.created_at }}</span>
+                </p>
+                <p class="mt-2 text-gray-700">
+                    {{ comment.body|linebreaks }}
+                </p>
+            </div>
+            {% empty %}
+            <p class="text-gray-500">No comments yet. Be the first to comment!</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% endwith %}
+
+    <!-- Add Comment Button and Form -->
+    <div x-data="{ showForm: false }" class="mt-6">
+        <!-- Add Comment Form -->
+        <div x-show="showForm" class="mt-4">
+            {% include "post/includes/comment_form.html" %}
+        </div>
+    
+        <!-- Toggle Button -->
+        <button 
+            @click="showForm = !showForm" 
+            :class="showForm ? 'bg-red-600 hover:bg-red-700 focus:ring-red-500' : 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-500'" 
+            class="mt-4 px-4 py-2 text-white font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2">
+            <span x-text="showForm ? 'Cancel' : 'Add Comment'"></span>
+        </button>
+    </div>    
 </div>
 {% endblock %}

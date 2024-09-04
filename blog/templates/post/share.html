@@ -1,4 +1,6 @@
-{% extends "blog/base.html" %}
+{% extends "base.html" %}
+
+{% load widget_tweaks %}
 
 {% block title %}Share a post{% endblock %}
 
@@ -7,7 +9,7 @@
     {% if sent %}
         <h1 class="text-3xl font-bold text-green-600 mb-4">E-mail successfully sent</h1>
         <p class="text-gray-700">
-            "{{ post.title }}" was successfully sent to {{ form.cleaned_data.email }}.
+            "{{ post.title }}" was successfully sent to {{ form.cleaned_data.email_to }}.
         </p>
     {% else %}
         <h1 class="text-3xl font-bold text-gray-800 mb-6">Share "{{ post.title }}" by e-mail</h1>
@@ -24,7 +26,7 @@
                     {{ field.label_tag }}
                 </label>
                 <div>
-                    {{ field }}
+                    {{ field|add_class:"input-class text-gray-700 border rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"}}
                     {% if field.errors %}
                     <p class="text-red-500 text-xs italic">{{ field.errors }}</p>
                     {% endif %}

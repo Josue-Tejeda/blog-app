@@ -3,9 +3,10 @@ from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404, render
 from django.http import Http404
 from django.views.generic import ListView
+from django.views.decorators.http import require_POST
 
 from blog.data import PUBLISHED
-from .forms import EmailPostForm
+from .forms import EmailPostForm, CommentForm
 from .models import Post
 
 def post_list(request):
@@ -49,7 +50,14 @@ def post_detail(request, year, month, day, post_slug):
     except:
         raise Http404('No Post found.')
     
-    context = {'post': post}
+    comments = post.comments.get_all_active()
+    form = CommentForm()
+    
+    context = {
+        'post': post,
+        'comments': comments,
+        'form': form,
+        }
     
     return render(request, template, context)
 
@@ -62,10 +70,7 @@ def post_share(request, post_id):
         status=PUBLISHED
     )
     sent = False
-    context = {
-        'post': post,
-        'form': form,
-    }
+    
     if request.method == 'POST':
         form = EmailPostForm(request.POST)
         if form.is_valid():
@@ -74,15 +79,53 @@ def post_share(request, post_id):
                 post.get_absolute_url()
             )
             subject = (
-                "{cd['name']} recommends you read {post.title}"
+                f"{cd['name']} recommends you read {post.title}"
             )
             message = (
                 f"Read {post.title} at {post_url}\n\n"
                 f"{cd['name']}\'s comments: {cd['comments']}"
             )
+            
+            
+            send_mail(
+                subject=subject,
+                message=message,
+                from_email=None,
+                recipient_list=[cd['email_to']]
+            )
             sent = True
     else:
         form = EmailPostForm()
     
-    context['sent'] = sent
+    context = {
+        'post': post,
+        'form': form,
+        'sent': sent,
+    }
+    return render(request, template, context)
+
+
+@require_POST
+def post_comment(request, post_id):
+    template = 'post/comment.html'
+    
+    post = get_object_or_404(
+        Post,
+        id=post_id,
+        status=PUBLISHED
+    )
+    comment = None
+    
+    form = CommentForm(data=request.POST)
+    if form.is_valid():
+        comment = form.save(commit=False)
+        comment.post = post
+        comment.save()
+        
+    context = {
+        'post': post,
+        'form': form,
+        'comment': comment
+    }
+        
     return render(request, template, context)
