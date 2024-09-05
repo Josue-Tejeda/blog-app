@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-6">About</h1>
+
+    <div class="prose mx-auto">
+        <p class='text-center'>Welcome to my blog post, your go-to source for insightful and engaging blog posts. We aim to provide high-quality content on various topics, including technology, lifestyle, and personal growth.</p>
+
+        <p class='text-center'>Our blog is created and managed by Josue and friends who are dedicated to sharing valuable information and perspectives. We strive to create a space where readers can find inspiration, learn something new, and connect with a community of like-minded individuals.</p>
+
+        <h2 class="text-2xl font-semibold text-center mt-8 mb-4">Our Mission</h2>
+        <p class='text-center'>Our mission is to foster a welcoming and informative environment where readers can explore a range of subjects that matter to them. Whether you’re looking for the latest tech trends, practical life tips, or thought-provoking articles, we have something for everyone.</p>
+
+        <h2 class="text-2xl font-semibold text-center mt-8 mb-4">Get in Touch</h2>
+        <p class='text-center'>We’d love to hear from you! If you have any questions, suggestions, or just want to say hello, feel free to <a href="{% url 'blog:contact' %}" class="text-blue-600 hover:underline">contact us</a>.</p>
+
+        <p class='text-center' >Thank you for visiting. We hope you enjoy your time here and find our content valuable!</p>
+    </div>
+</div>
+{% endblock %}

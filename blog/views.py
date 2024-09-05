@@ -156,3 +156,12 @@ def post_comment(request, post_id):
     }
         
     return render(request, template, context)
+
+
+def about(request):
+    template = 'post/about.html'
+    return render(request, template)
+
+def contact(request):
+    template = 'post/contact.html'
+    return render(request, template)
