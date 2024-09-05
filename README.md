@@ -20,7 +20,7 @@ This is a Django-based blog website that allows users to view, comment and share
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/blog-website.git
+git clone https://github.com/Josue-Tejeda/blog-app
 cd blog-app
 ```
 
