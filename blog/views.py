@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import Http404
 from django.views.decorators.http import require_POST
 from django.db.models import Count
-from django.contrib.postgres.search import SearchVector
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
 from taggit.models import Tag   
 
 from blog.data import PUBLISHED
@@ -46,9 +46,11 @@ def post_search(request):
         form = SearchForm(request.GET)
         if form.is_valid():
             query = form.cleaned_data['query']
+            search_vector = SearchVector('title', 'body')
+            search_query = SearchQuery(query)
             results = Post.objects.annotate(
-                search=SearchVector('title', 'body')
-            ).filter(search=query)
+                search=search_vector, rank=SearchRank(search_vector, search_query)
+                ).filter(search=query).order_by('-rank')
     
     context = {
         'form': form,
