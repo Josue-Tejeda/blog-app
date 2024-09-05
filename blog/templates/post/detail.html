@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load blog_tags %}
 
 {% block title %}{{ post.title }}{% endblock %}
 
@@ -12,7 +13,7 @@
     
     <!-- Post Content -->
     <article class="prose lg:prose-xl max-w-none">
-        {{ post.body|linebreaks }}
+        {{ post.body|markdown }}
     </article>
     
     <!-- Share Button -->
