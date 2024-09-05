@@ -41,4 +41,4 @@ docker exec -i blog_app-db-1 psql -U blog -d postgres -c "DROP DATABASE blog;" &
 docker exec -i blog_app-db-1 psql -U blog -d postgres -c "CREATE DATABASE blog;" && \
 docker exec -i blog_app-db-1 psql -U blog -d blog < db.sql
 ```
-```
+
