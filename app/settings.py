@@ -1,3 +1,4 @@
+import os
 from decouple import config
 
 from pathlib import Path
@@ -13,9 +14,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fqyc2g_ft9bxvpqfq!l0jcy2qr9(hqn8)yys+uj_+3#=dxt+e5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.environ.get("DEBUG", default=0))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
+
 
 SITE_ID = 1
 
@@ -76,10 +78,11 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
+        'NAME': os.getenv('POSTGRES_DB', 'blog'),
+        'USER': os.getenv('POSTGRES_USER', 'blog'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'blog'),
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 

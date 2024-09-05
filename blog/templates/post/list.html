@@ -11,7 +11,6 @@
       {% if tag %}
       <h2 class="text-2xl font-semibold text-gray-800 mb-2">Posts tagged with "{{ tag.name }}"</h2>
       {% endif %}
-      
       {% for post in posts %}
       <article class="bg-white shadow-lg rounded-lg mb-8 overflow-hidden">
         <div class="p-6">
@@ -45,6 +44,7 @@
       
       {% include "pagination.html" with page=posts %}
     </main>
+    {% if latest_posts|length > 0 %}
     <aside class="hidden md:block col-span-4 mt-20">
       <section class="bg-blue-50 p-4 rounded-lg shadow-md mb-4">
         <h3 class="text-xl font-semibold text-gray-800 mb-4">Latest Posts</h3>
@@ -73,6 +73,8 @@
         </ul>
       </section>
     </aside>
+    {% else %}
+    {% endif %}
   </div>
 </div>
 {% endblock %}

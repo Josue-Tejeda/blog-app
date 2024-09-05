@@ -1,0 +1,12 @@
+EMAIL_PORT = 587
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+
+DB_NAME=blog
+DB_USER=blog
+DB_PASSWORD=blog
+DB_HOST=localhost
+
+DEBUG=1
+SECRET_KEY=django-insecure-fqyc2g_ft9bxvpqfq!l0jcy2qr9(hqn8)yys+uj_+3#=dxt+e5
+DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
