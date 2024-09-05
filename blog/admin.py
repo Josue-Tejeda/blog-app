@@ -13,7 +13,7 @@ class PostAdmin(admin.ModelAdmin):
     
     date_hierarchy = 'publish_at'
     
-    ordering = ['status', 'publish_at']
+    ordering = ['-publish_at', 'status']
     
     show_facets = admin.ShowFacets.ALWAYS
     
