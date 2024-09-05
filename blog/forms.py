@@ -15,4 +15,5 @@ class EmailPostForm(forms.Form):
         widget=forms.Textarea
     )
     
-    
+class SearchForm(forms.Form):
+    query = forms.CharField()

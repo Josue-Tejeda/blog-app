@@ -4,10 +4,11 @@ from django.shortcuts import get_object_or_404, render
 from django.http import Http404
 from django.views.decorators.http import require_POST
 from django.db.models import Count
+from django.contrib.postgres.search import SearchVector
 from taggit.models import Tag   
 
 from blog.data import PUBLISHED
-from .forms import EmailPostForm, CommentForm
+from .forms import EmailPostForm, CommentForm, SearchForm
 from .models import Post
 
 def post_list(request, tag_slug=None):
@@ -32,6 +33,29 @@ def post_list(request, tag_slug=None):
         'posts': posts,
         'tag': tag
         }
+    return render(request, template, context)
+
+
+def post_search(request):
+    template = 'post/search.html'
+    form = SearchForm()
+    query = None
+    results = []
+    
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            results = Post.objects.annotate(
+                search=SearchVector('title', 'body')
+            ).filter(search=query)
+    
+    context = {
+        'form': form,
+        'query': query,
+        'results': results
+    }
+    
     return render(request, template, context)
 
 

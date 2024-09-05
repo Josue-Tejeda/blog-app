@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% load widget_tweaks %}
+{% load blog_tags %}
+{% block title %}Search{% endblock %}
+{% block content %}
+<div class="flex justify-center">
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        {% if query %}
+        <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Posts containing "{{ query }}"</h1>
+        <h3 class="text-lg text-gray-600 mb-6 text-center">
+            {% with results.count as total_results %}
+            Found {{ total_results }} result{{ total_results|pluralize }}.
+            {% endwith %}
+        </h3>
+        <div class="space-y-4">
+            {% for post in results %}
+            <div class="border-b border-gray-200 pb-4">
+                <h4 class="text-xl font-semibold text-blue-600 hover:text-blue-800 transition duration-300">
+                    <a href="{{ post.get_absolute_url }}">
+                        {{ post.title }}
+                    </a>
+                </h4>
+                <p class="text-gray-700">{{ post.body|markdown|truncatewords_html:12 }}</p>
+            </div>
+            {% empty %}
+            <p class="text-gray-600 text-center">There are no results for your query.</p>
+            {% endfor %}
+        </div>
+        <p class="mt-6 text-center">
+            <a href="{% url 'blog:post_search' %}" class="text-blue-600 hover:text-blue-800 transition duration-300 underline">
+                Search again
+            </a>
+        </p>
+        {% else %}
+        <h1 class="text-3xl font-bold text-gray-800 mb-4 text-center">Search for posts</h1>
+        <form method="get" class="space-y-4 text-center">
+            <div class="mb-4">
+                <div class="flex justify-center">
+                    {{ form.query|add_class:"input-class text-gray-700 border rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"}}
+                    {% if field.errors %}
+                    <p class="text-red-500 text-xs italic">{{ field.errors }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            <input type="submit" value="Search" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 cursor-pointer">
+        </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

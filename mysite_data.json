@@ -1,0 +1,1180 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-08-29T23:03:58.254Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Lorem ipsum",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-08-30T13:18:10.277Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "The life of the ants",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-08-30T20:25:11.073Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "The life of the ants",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-08-30T20:25:15.035Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Lorem ipsum",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-08-30T21:01:44.028Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Lorem ipsum",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-08-30T21:03:52.201Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Lorem ipsum",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-08-30T21:04:03.641Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Lorem ipsum",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-08-30T21:04:10.687Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Lorem ipsum",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-08-30T21:13:36.231Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Elias es horrible",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-08-30T21:13:51.689Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Elias es horrible",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-09-02T15:28:08.577Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Other Post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-09-04T13:35:48.319Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Comment by Lorem ipsum is so great on Lorem ipsum",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-09-04T16:40:54.963Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "The life of the ants",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-09-04T16:45:47.480Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Lorem ipsum",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-09-04T16:52:51.433Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Lorem ipsum",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-09-04T16:53:11.576Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Other Post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-09-04T18:45:02.855Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Embracing Minimalism: How Less Can Truly Be More",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-09-04T18:45:59.816Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "The Power of Morning Routines: Kickstart Your Day for Success",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-09-04T19:46:26.867Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "The Power of Morning Routines: Kickstart Your Day for Success",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-09-04T19:47:35.698Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "The Power of Morning Routines: Kickstart Your Day for Success",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-09-04T19:49:38.494Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "The Power of Morning Routines: Kickstart Your Day for Success",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-09-04T19:50:08.429Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "The Power of Morning Routines: Kickstart Your Day for Success",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-09-04T19:50:49.163Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "The Power of Morning Routines: Kickstart Your Day for Success",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-09-04T19:51:20.631Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "The Power of Morning Routines: Kickstart Your Day for Success",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-09-04T19:52:43.060Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Embracing Minimalism: How Less Can Truly Be More",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-09-05T13:20:09.683Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "localhost:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$s7macE6QQ7YDOEWYRRBJHA$pNbKHsWT++wx2mMOwVAOXYQwluX+kK6V0HlhKFJXNUY=",
+    "last_login": "2024-09-05T13:19:02.670Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-08-29T23:01:10.918Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "jox",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-08-30T13:30:45.882Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "adzqc61b8b0aix0t6bmc7jch51fninza",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAy08Lg0r1naGAYpGpoUtqV8e7apAvd_vfef6kxbGsZtybLOCV1VkadfrcY-CF1B-ke6m3WPNd1maLeFX3Qpq9zkuflcP8OSmjlW0ti6XvqyOXBZgIEC9S7wAYsBkL0GJ2njAiDdGKSZ07kwBPT4ADU-wPGPzbV:1smCO6:pO6Q7lezwzN0a3FYR12LnQIDOHGnVIPL-OnwlW_9HRo",
+    "expire_date": "2024-09-19T13:19:02.673Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l1nhdayquezbixrv9ea12935g8clg00a",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAy08Lg0r1naGAYpGpoUtqV8e7apAvd_vfef6kxbGsZtybLOCV1VkadfrcY-CF1B-ke6m3WPNd1maLeFX3Qpq9zkuflcP8OSmjlW0ti6XvqyOXBZgIEC9S7wAYsBkL0GJ2njAiDdGKSZ07kwBPT4ADU-wPGPzbV:1sjo8q:f2MysBhbdsEFCJQw7O2X1zaCkxCgss3QwpaWG2Iofgs",
+    "expire_date": "2024-09-12T23:01:24.323Z"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "localhost:8000"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "beauty",
+    "slug": "beauty"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "science",
+    "slug": "science"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "life",
+    "slug": "life"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "mindfullness",
+    "slug": "mindfullness"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Lorem ipsum",
+    "status": 20,
+    "slug": "lorem-ipsum",
+    "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "author": 1,
+    "publish_at": "2024-08-29T23:02:55Z",
+    "created_at": "2024-08-29T23:03:58.254Z",
+    "updated_at": "2024-09-04T16:52:51.430Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "The life of the ants",
+    "status": 20,
+    "slug": "the-life-of-the-ants",
+    "body": "Ants are highly organized social insects that live in complex colonies, often consisting of thousands or even millions of individuals. Each colony has a strict hierarchy, typically including a queen, workers, and males. The queen’s primary role is to lay eggs, while worker ants perform various tasks such as foraging for food, caring for the young, and defending the nest. Ants communicate through chemicals called pheromones, which help them coordinate tasks and alert others to danger. They are incredibly adaptable and can thrive in diverse environments, making them one of the most successful groups of insects on Earth.",
+    "author": 1,
+    "publish_at": "2024-08-30T13:17:58Z",
+    "created_at": "2024-08-30T13:18:10.276Z",
+    "updated_at": "2024-09-04T16:40:54.960Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "Other Post",
+    "status": 20,
+    "slug": "other-post",
+    "body": "post body with neat information",
+    "author": 1,
+    "publish_at": "2024-08-30T13:28:39Z",
+    "created_at": "2024-08-30T13:28:45.038Z",
+    "updated_at": "2024-09-04T16:53:11.573Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "Elias es horrible",
+    "status": 20,
+    "slug": "elias-es-horrible",
+    "body": "Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si Elias es horrible que si que si",
+    "author": 2,
+    "publish_at": "2024-08-30T21:13:07Z",
+    "created_at": "2024-08-30T21:13:36.231Z",
+    "updated_at": "2024-08-30T21:13:51.688Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "Embracing Minimalism: How Less Can Truly Be More",
+    "status": 20,
+    "slug": "embracing-minimalism-how-less-can-truly-be-more",
+    "body": "In a world overflowing with choices, clutter, and constant noise, the minimalist lifestyle has gained popularity as a way to reclaim peace, focus, and intentional living. But what exactly is minimalism, and how can it positively impact your life?<br><br>\r\n\r\nMinimalism isn’t just about getting rid of stuff; it’s about making space for what truly matters. It’s a mindset shift from accumulating to appreciating, from owning to experiencing. By stripping away the excess, minimalism allows us to focus on the essentials—our passions, relationships, and personal growth.<br><br>\r\n\r\n**The Benefits of Minimalism**<br><br>\r\n\r\n* *Less Stress, More Peace*: Clutter can be overwhelming, and a tidy space can have a calming effect on your mind. By reducing physical possessions, you also reduce mental clutter, leading to a more peaceful and focused life.<br><br>\r\n\r\n* *Financial Freedom*: When you stop buying things you don't need, you save money, pay off debts faster, and gain the freedom to invest in experiences rather than things. This can be as simple as taking a weekend trip, enrolling in a class, or even saving for early retirement.<br><br>\r\n\r\n* *Better Focus and Productivity*: A clutter-free environment helps you focus better on tasks and reduces distractions. Minimalism encourages you to prioritize your time, energy, and resources on what brings you joy and value.<br><br>\r\n\r\n* *Improved Relationships*: By valuing experiences over possessions, minimalism encourages deeper connections with people. It’s about sharing moments rather than things, which often leads to more meaningful relationships.<br><br>\r\n\r\n**How to Start Your Minimalist Journey**<br><br>\r\n\r\n* *Declutter One Area at a Time*: Start small, maybe with your wardrobe or a drawer in your kitchen. Evaluate each item: Does it add value to your life? If not, let it go.<br><br>\r\n\r\n* *Be Intentional with Your Purchases*: Before buying anything new, ask yourself if it’s something you truly need or if it’s just a temporary desire. Consider waiting a week before making any non-essential purchase.<br><br>\r\n\r\n* *Embrace Digital Minimalism*: Your digital space matters too. Unsubscribe from newsletters, delete unused apps, and declutter your email inbox. Less digital clutter means more mental clarity.<br><br>\r\n\r\n* *Focus on Experiences, Not Things*: Shift your spending habits towards experiences that create memories. Go for a hike, cook a meal with loved ones, or learn a new skill.<br><br>\r\n\r\n**Final Thoughts**<br><br>\r\n\r\nMinimalism isn’t about living with nothing; it’s about living with enough. It’s about finding joy in simplicity and purpose in less. As you start to embrace this lifestyle, you’ll discover that having less allows you to live more fully, intentionally, and freely. So take the first step—let go of what’s holding you back and make room for what truly matters.",
+    "author": 2,
+    "publish_at": "2024-09-04T18:44:13Z",
+    "created_at": "2024-09-04T18:45:02.849Z",
+    "updated_at": "2024-09-04T19:52:43.058Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "The Power of Morning Routines: Kickstart Your Day for Success",
+    "status": 20,
+    "slug": "the-power-of-morning-routines-kickstart-your-day-for-success",
+    "body": "*Ever wondered why some people seem to have it all together before 9 AM while the rest of us are still hitting the snooze button?* The secret often lies in one powerful habit: a **well-crafted morning routine**. Far from just a buzzword, morning routines set the tone for your entire day, helping you start with focus, energy, and intention.\r\n\r\n<br>\r\nBut building the perfect morning routine doesn’t mean waking up at 5 AM to run a marathon or meditate for an hour. It’s about creating a series of habits that work for you, setting you up for a day filled with purpose and productivity.\r\n\r\n<br>\r\n**Why Morning Routines Matter**\r\n\r\n<br>\r\n* *Increased Productivity*: Starting your day with intention helps you prioritize tasks and avoid procrastination. By taking control of your morning, you set a positive tone for the rest of the day, leading to better focus and productivity.\r\n\r\n<br>\r\n* *Reduced Stress*: Morning routines provide a sense of structure and control. Knowing exactly how you’ll start your day can significantly reduce anxiety and stress, making you feel more in charge of your schedule.\r\n\r\n<br>\r\n* *Improved Mental Health*: Incorporating mindfulness, gratitude, or exercise into your morning can boost your mood and mental well-being. These small actions can set a positive mindset that lasts throughout the day.\r\n\r\n<br>\r\n* *Better Decision-Making*: We all have a limited amount of willpower and decision-making energy each day. A routine automates your mornings, saving your mental energy for more critical decisions later in the day.\r\n\r\n<br>\r\n**Building Your Ideal Morning Routine**\r\n\r\n<br>\r\n1. **Start with a Consistent Wake-Up Time**: Consistency is key. Whether it’s 6 AM or 8 AM, pick a time that suits your lifestyle and stick to it. This helps regulate your body’s internal clock, making it easier to wake up and feel refreshed.\r\n\r\n<br>\r\n2. **Move Your Body**: You don’t need to hit the gym for an hour; even a quick 10-minute stretch or yoga session can do wonders. Movement gets your blood flowing, releases endorphins, and wakes up your body and mind.\r\n\r\n<br>\r\n3. **Hydrate and Nourish**: Start your day with a glass of water to rehydrate after sleep. Follow it up with a healthy breakfast that fuels your body. A balanced meal can improve concentration and give you the energy you need to power through your morning.\r\n\r\n<br>\r\n4. **Set Your Intentions**: Take a few minutes to plan your day. This could be through journaling, listing your top three priorities, or simply visualizing a successful day ahead. Setting intentions keeps you focused on what truly matters.\r\n\r\n<br>\r\n5. **Avoid Screens**: Resist the urge to check your phone or email first thing. Instead, use your morning for mindful activities that don’t involve a screen. This can help you start the day on your own terms, not someone else’s agenda.\r\n\r\n<br>\r\n**Tips for Sticking to Your Routine**\r\n\r\n<br>\r\n* *Start Small*: Don’t overhaul your entire morning at once. Introduce one habit at a time and gradually build up your routine.\r\n\r\n<br>\r\n* *Be Flexible*: Life happens, and sometimes routines need to adapt. If you miss a step, don’t stress. Focus on consistency over perfection.\r\n\r\n<br>\r\n* *Reflect and Adjust*: Regularly assess your routine to see what’s working and what isn’t. Adjust as needed to keep it enjoyable and effective.\r\n\r\n<br>\r\n**Final Thoughts**\r\n\r\n<br>\r\nA morning routine is more than just a collection of habits—it’s a promise to yourself to start each day with purpose. Whether it’s five minutes or an hour, your morning can be a powerful tool to set the pace for success. So, craft a routine that works for you, and watch how it transforms not just your mornings but your entire day.",
+    "author": 1,
+    "publish_at": "2024-09-04T18:45:30Z",
+    "created_at": "2024-09-04T18:45:59.813Z",
+    "updated_at": "2024-09-04T19:51:20.629Z"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "name": "Lorem ipsum is so great",
+    "email": "josuetejeda6@gmail.com",
+    "body": "lorem is the best and you dont have the right therefore you dont have the right",
+    "created_at": "2024-09-04T00:00:00Z",
+    "updated_at": "2024-09-04T00:00:00Z",
+    "is_active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 4,
+    "name": "This is right si que si",
+    "email": "josuetejeda02@gmail.com",
+    "body": "This is poetry at its maximum expression, words can not describe the feelings I'm experiencing by this work of art of a post.",
+    "created_at": "2024-09-04T00:00:00Z",
+    "updated_at": "2024-09-04T00:00:00Z",
+    "is_active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 3,
+    "name": "Josue",
+    "email": "josuetejeda6@gmail.com",
+    "body": "wow nice information",
+    "created_at": "2024-09-04T15:15:30.562Z",
+    "updated_at": "2024-09-04T15:15:30.562Z",
+    "is_active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 3,
+    "name": "Elias",
+    "email": "eliastejedapalmera@gmail.com",
+    "body": "I think this post suck humongous gorilla dick!",
+    "created_at": "2024-09-04T15:16:58.056Z",
+    "updated_at": "2024-09-04T15:16:58.056Z",
+    "is_active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "post": 4,
+    "name": "Elias",
+    "email": "eliastejedapalmera@gmail.com",
+    "body": "These are lies spread by the institution, I hereby bow that you will rue the day you post this",
+    "created_at": "2024-09-04T16:48:13.547Z",
+    "updated_at": "2024-09-04T16:48:13.547Z",
+    "is_active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 6,
+  "fields": {
+    "post": 6,
+    "name": "jox",
+    "email": "sergius_and@yahoo.com",
+    "body": "i miss htmx man",
+    "created_at": "2024-09-04T19:26:23.417Z",
+    "updated_at": "2024-09-04T19:26:23.417Z",
+    "is_active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 7,
+  "fields": {
+    "post": 6,
+    "name": "secret",
+    "email": "sergius_and@yahoo.com",
+    "body": "Nice post man",
+    "created_at": "2024-09-05T03:32:48.885Z",
+    "updated_at": "2024-09-05T03:32:48.885Z",
+    "is_active": true
+  }
+}
+]
